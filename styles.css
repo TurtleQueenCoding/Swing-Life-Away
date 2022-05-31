@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(180deg, #ffe273 0%, #ff9a53 50%, #ff86da 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow: clip;
+}
+.lyrics {
+	text-align: center;
+	margin: 25vh auto;
+	font-family: "Special Elite", monospace;
+	font-size: 2rem;
+	max-width: 60%;
+	animation-name: swing;
+	animation-duration: 3s;
+	transform-origin: top;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: -1s;
+}
+.lines {
+	line-height: 1.4em;
+	color: hsl(30, 100%, 21%);
+	text-shadow: -1px -1.5px hsl(30, 100%, 10%), 2px 2px hsl(30, 100%, 85%), 3px 3px hsl(30, 100%, 90%);
+}
+@keyframes swing {
+	0% {
+		transform: rotate(-6deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(6deg);
+	}
+	75% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-6deg);
+	}
+}
